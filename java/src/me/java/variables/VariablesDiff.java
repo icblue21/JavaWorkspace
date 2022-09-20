@@ -1,4 +1,4 @@
-package Variables;
+package me.java.variables;
 
 public class VariablesDiff {
     public static void main(String[] args){
