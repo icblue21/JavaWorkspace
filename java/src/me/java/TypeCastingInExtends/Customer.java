@@ -1,4 +1,4 @@
-package TypeCastingInExtends;
+package me.java.TypeCastingInExtends;
 
 public class Customer {
 
