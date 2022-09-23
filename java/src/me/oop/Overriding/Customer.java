@@ -1,4 +1,4 @@
-package me.java.ExtendsPractice;
+package me.oop.Overriding;
 
 public class Customer {
 
@@ -9,10 +9,20 @@ public class Customer {
 
     double bonusRatio;
 
-    public Customer(){
+     public Customer(){
 
         customerGrade = "SILVER";
         bonusRatio = 0.01;
+
+    }
+
+     public Customer(int customerID, String customerName){
+        this.customerID = customerID;
+        this.customerName = customerName;
+
+        customerGrade = "SILVER";
+        bonusRatio = 0.01;
+
     }
 
     public int calcPrice(int price){

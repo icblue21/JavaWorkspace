@@ -1,4 +1,4 @@
-package me.java.Polymorphism;
+package me.oop.Polymorphism;
 
 public class Customer {
 

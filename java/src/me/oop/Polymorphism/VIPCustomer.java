@@ -1,4 +1,4 @@
-package me.java.TypeCastingInExtends;
+package me.oop.Polymorphism;
 
 public class VIPCustomer extends Customer {
     double saleRatio;
@@ -13,9 +13,8 @@ public class VIPCustomer extends Customer {
 
         super(0,"no_name");
         bonusRatio = 0.05;
-        saleRatio = 0.1;
+        saleRatio = 0.2;
         customerGrade = "VIP";
-        System.out.println( "VIPCustomer() called");
     }
 
     public VIPCustomer(int customerID, String customerName) {
@@ -23,7 +22,7 @@ public class VIPCustomer extends Customer {
 
         customerGrade = "VIP";
         bonusRatio = 0.05;
-        saleRatio = 0.1;
+        saleRatio = 0.2;
     }
 
     public double getSaleRatio() {
@@ -40,5 +39,13 @@ public class VIPCustomer extends Customer {
 
     public void setAgentID(String agentID) {
         this.agentID = agentID;
+    }
+
+    @Override
+    public int calcPrice(int price) {
+
+        bonusPoint += price*bonusRatio;
+        price -= (int)(price*saleRatio);
+        return price;
     }
 }

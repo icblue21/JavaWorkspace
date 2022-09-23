@@ -1,4 +1,4 @@
-package me.java.TypeCastingInExtends;
+package me.oop.ExtendsPractice;
 
 public class Customer {
 
@@ -9,23 +9,10 @@ public class Customer {
 
     double bonusRatio;
 
-    /* public Customer(){
+    public Customer(){
 
         customerGrade = "SILVER";
         bonusRatio = 0.01;
-
-        System.out.println( "Customer() called");
-    } */
-
-    public Customer(int customerID, String customerName){
-        this.customerID = customerID;
-        this.customerName = customerName;
-
-        customerGrade = "SILVER";
-        bonusRatio = 0.01;
-
-
-        System.out.println( "Customer(int, String) called");
     }
 
     public int calcPrice(int price){

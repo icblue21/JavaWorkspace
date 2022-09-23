@@ -1,4 +1,4 @@
-package me.java.Overriding;
+package me.oop.Overriding;
 
 public class VIPCustomer extends Customer {
     double saleRatio;

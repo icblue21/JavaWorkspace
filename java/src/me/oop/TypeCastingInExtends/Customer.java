@@ -1,4 +1,4 @@
-package me.java.Overriding;
+package me.oop.TypeCastingInExtends;
 
 public class Customer {
 
@@ -9,20 +9,23 @@ public class Customer {
 
     double bonusRatio;
 
-     public Customer(){
+    /* public Customer(){
 
         customerGrade = "SILVER";
         bonusRatio = 0.01;
 
-    }
+        System.out.println( "Customer() called");
+    } */
 
-     public Customer(int customerID, String customerName){
+    public Customer(int customerID, String customerName){
         this.customerID = customerID;
         this.customerName = customerName;
 
         customerGrade = "SILVER";
         bonusRatio = 0.01;
 
+
+        System.out.println( "Customer(int, String) called");
     }
 
     public int calcPrice(int price){

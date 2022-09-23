@@ -1,4 +1,4 @@
-package me.java.ExtendsPractice;
+package me.oop.ExtendsPractice;
 
 public class CustomerTest {
 
