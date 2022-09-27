@@ -1,4 +1,4 @@
-package me.datastructure;
+package me.datastructure.array;
 
 public class MyArrayTest {
     public static void main(String[] args) {
